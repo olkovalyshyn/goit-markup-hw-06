@@ -337,7 +337,7 @@
         <button data-modal-close class="close-button">
           <img class="close-img" src="./images/close.svg" alt="close" />
         </button>
-        <form class="form js-speaker-form">
+        <form class="form js-speaker-form" autocomplete="off">
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-field">
             <input class="form-input" type="text" name="user-name" id="user-name" placeholder=" " />
@@ -364,8 +364,8 @@
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="coment">Комментарий</label>
-            <textarea name="coment" id="coment" rows="10"></textarea>
+            <textarea class="form-input comment" name="comment" id="comment" rows="10" placeholder=" "></textarea>
+            <label class="form-label-comment" for="comment">Комментарий</label>
           </div>
 
           <div class="agreement">
