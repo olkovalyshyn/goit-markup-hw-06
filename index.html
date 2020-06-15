@@ -316,7 +316,9 @@
           <div class="sign-up-container">
             <p class="footer-title">Подпишитесь на рассылку</p>
             <ul class="list">
-              <li class="list-email">E-mail</li>
+              <li class="list-email">
+                <label class="email-label"> <input class="email-input" type="email" name="email" placeholder="E-mail" /> </label>
+              </li>
               <li class="list-button">
                 <button class="footer-button">
                   Подписаться
@@ -337,6 +339,7 @@
         <button data-modal-close class="close-button">
           <img class="close-img" src="./images/close.svg" alt="close" />
         </button>
+
         <form class="form js-speaker-form" autocomplete="off">
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-field">
@@ -356,7 +359,7 @@
           </div>
 
           <div class="form-field">
-            <input class="form-input" type="email" name="user-email" id="user-email" placeholder=" " />
+            <input class="form-input" type="email" name="user-email" placeholder=" " />
             <label class="form-label" for="user-email">Почта</label>
             <svg class="logo-form" width="18px" height="18px">
               <use href="./images/sprite-form.svg#icon-form_email"></use>
@@ -368,10 +371,18 @@
             <label class="form-label-comment" for="comment">Комментарий</label>
           </div>
 
-          <div class="agreement">
-            <input type="checkbox" name="Комментарий" id="agree" />
-            <label for="agree">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-          </div>
+          <label class="agreement">
+            <input class="checkbox" type="checkbox" name="Комментарий" />
+            <span class="icon"></span>
+            Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a>
+          </label>
+
+          <!-- <div class="agreement">
+            <label>
+              <input class="checkbox" type="checkbox" name="Комментарий" />
+              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            </label>
+          </div> -->
 
           <button class="hero-button modal-send" type="submit">Отправить</button>
         </form>
